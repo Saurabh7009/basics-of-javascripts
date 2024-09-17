@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+
+    <style>
+
+.container{
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+       #text,#amount,#category {
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Includes padding and border in the width  so the overall width turns out be 
+    500px, if u add extra padding orborder then also the max width would be 500px that is the quality of
+     box-sizing:borderbox and thats why we get an uniform layers of input field */
+
+}
+   
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 text-align="center">Expense Tracker</h1>
+    <form>
+        <input type="text" id="text" placeholder="enter description"><br>
+        <select id="category" name="options" >
+            <option value="Food">Food</option>
+            <option value="Bevarages">Beverages</option>
+            <option value="Travel">Travel</option>
+            <option value="Hotels">Hotels</option>
+
+        </select><br>
+        <input type="number" id="amount" placeholder="amount"><br>
+        <input type="submit" id="submit" value="Add Expense">
+        
+
+    </form>
+    <h2>Expense Summary</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Description</th>
+            <th>category</th>
+            <th>amount</th>
+        </tr>
+        </thead>
+        <tbody id="expenselist">
+
+            
+
+
+
+
+
+
+
+        </tbody>
+
+    </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
